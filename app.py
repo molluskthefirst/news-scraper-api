@@ -30,6 +30,7 @@ def scrape():
         "author": author,
         "content": " ".join(paragraphs)
     })
+
 @app.route("/health", methods=["GET"])
 def health():
     return jsonify({"status": "ok"}), 200
